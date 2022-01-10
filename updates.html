@@ -16,27 +16,35 @@
     
      html {color:white; background-color:black;font-family: 'Roboto', sans-serif;}
      .no-underline {text-decoration:none; color:white;}
-     hr {color:white;}
+     hr {color:gray;}
      h1,h3 {text-align:center; font-family: 'Arima Madurai', sans-serif;}
+     .data{display: block;
+  margin-left: auto;
+       margin-right: auto;}
+     ul, ul a li{text-align:center; background-color:black; color:ivory;}
+     .date {font-weight:bold;}
+     .latest-date {font-weight:bold; text-decoration:underline;}
     </style>
   </head>
 <body>
 
 <h1>My Astrophotography</h1>
 <ul>
-  <li>My Gear</li>
-  <li>Showcase</li>
-  <li>Home</li>
+  <a href="gear.html"><li>My Gear</li></a>
+  <a href="showcase.html"><li>Showcase</li></a>
+           <a href="index.html"><li>Home</li></a>
+           <a href="tutorials.html"><li>Tutorials</li></a>
 </ul>
   <div id="latest-update" class="update">
   <h3>Update #1</h3>
-  <h6>Date: Jan 9th 2021</h6>
+  <h6 class="latest-date" class="date">Date: Jan 9th 2021</h6>
   <p>As those of you on Cloudy Nights might know, this month's <a href"https://www.cloudynights.com/topic/805279-goofis-imaging-challenge-january-2022-m42-orion-nebula/">astroimaging challenge<a/> is of M 42, or the Orion Nebula. As I had wanted to get a stack longer than 5 min, I got more data.I used just the new data, which ended up being ~30 min, which was split between 1.6 sec and 2 sec and f2.8-f4.
     
-    I struggle with postprocessing some, but thought I'd post my final image so far
+    I struggled with postprocessing some, but thought I'd post my final image so far.
     <hr>
-    <img src="https://nova.astrometry.net/image/12881179" alt="Orion Nebula and Flame Nebula" height=25% width=25%>
+    <img class="data" src="https://nova.astrometry.net/image/12881179" alt="Orion Nebula and Flame Nebula" height=25% width=25%>
     <hr>
+    I used Levels, Saturation, and Contrast a lot in <a href="gimp.org">GIMP</a> to process this image. GIMP is free and about as easy to use as Photoshop was for me (not too easy, but not real bad). I'm running GIMP on a Chromebook, and stacking images with <a href="http://deepskystacker.free.fr/">Deep Sky Stacker</a>, which is Windows-only and free on a Windows machine.
     All astroimages that aren't otherwise stated are copyright CN user Leia 2021-
     Please don't steal my images. If you'd like to use one, please contact me through <span class="no-underline"><a href="https://github.com/MaraJadeLives/MaraJadeLives.github.io/issues">Issues</a></span>, and use the Image Request template. I'll get back to you as soon as I can.
     </div>
