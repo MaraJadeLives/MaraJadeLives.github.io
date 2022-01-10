@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto&display=swap');
+hr {
+  color:gray;
+}
+h1,h3 {
+  text-align:center; 
+  font-family: 'Arima Madurai', sans-serif;
+}
+.data{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  text-align:center; 
+  background-color:black; 
+  color:ivory;
+}
+ul a li{
+  text-align:center; 
+  background-color:black; 
+  color:ivory;
+}
+.date {
+  font-weight:bold;
+}
+.latest-date {
+  font-weight:bold; 
+  text-decoration:underline;
+}
+html {
+  color:white; 
+  background-color:black;
+  font-family: 'Roboto', sans-serif;
+}
+.no-underline {
+  text-decoration:none; 
+  color:white;
+}
