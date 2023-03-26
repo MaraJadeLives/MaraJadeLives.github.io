@@ -11,3 +11,19 @@ p {
 .textgen-package-name {
   font-style: italic;
 }
+
+.navbar-brand a:link { 
+  text-decoration: none;
+}
+.navbar-brand a:visited { 
+  text-decoration: none; 
+}
+.navbar-brand a:hover {
+  text-decoration: none; 
+}
+.navbar-brand a:active {
+  text-decoration: none; 
+}
+.nav-featured {
+  color:DarkGray;
+}
