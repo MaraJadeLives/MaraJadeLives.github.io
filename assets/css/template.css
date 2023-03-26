@@ -8,3 +8,6 @@ p {
 .nav-featured {
   display: inline;
 }
+.textgen-package-name {
+  font-style: italic;
+}
