@@ -1,1 +1,27 @@
 
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+<body>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<nav class="navbar navbar-light bg-light">
+<div class="navbar-brand"> <a href="index.html"> <h1 class="blog-title">MaraJadeLives</h1></a> <span class="navbar-text" class="nav-featured"><a href="featured-projects.html">Featured Projects</a></span>
+</nav>
+
+  <h2 class="post-title">Textgenrnn</h2>
+
+<p>When I was looking for easily installable python packages to use to train to generate Honorverse fanfiction, the first one I stumbled upon was <a href="https://minimaxir.com/">Max Woolf</a>'s <a href="https://github.com/minimaxir/textgenrnn">textgenrnn</a> package. I tried installing it, first on my trusty i5 2nd gen Linux laptop. It didn't work. Okay, that might have been partly to thinking <span class="textgen-package-name">tensorflow</span> could run on CPUs, instead of needing <span class="textgen-package-name">tensorflow-cpu</span>, but I think I tried the <span class="textgen-package-name">tensorflow-cpu</span> package. Then I tried installing regular <span class="textgen-package-name">tensorflow</span> on a Windows 10 desktop with a NVS 510 in it, knowing that it had CUDA cores. I didn't know <span class="textgen-package-name">tensorflow</span> requires CUDA 3.5, and my card was a CUDA 3 card! I didn't want to pull out my 1050, so instead, I installed <span class="textgen-package-name">tensorflow-cpu</span>, and Anaconda, and a lot of other stuff.</p>
+<br>
+  <p>I ended up taking a break from <span class="textgen-package-name">textgenrnn</span>, before coming back to it after a failed attempt to hack the TensorFlow tutorial for text generation into working locally with a person who's good at Python, because I was bored and frustrated. See <a href="https://marajadelives.github.io/textgen/hacking.html">here</a> for details of the hacks I made to make recent (as of March 2023) versions of <span class="textgen-package-name">tensorflow-cpu</span> work with <span class="textgen-package-name">textgenrnn</span></p>
+  
+  <p>A handful of hacks and Google searches later, my two weeks of dependency and package nightmares were mostly over. <span class="textgen-package-name">textgenrnn</span> no longer spat tons of errors at me, but it still wouldn't work. I ended up contacting a Python-savvy friend, who helped me figure out that I needed to call the class to make things work. A few tries, and we'd gotten as far as I'd ever gotten in the Colab notebook. I waited around, for it to process all the text, and eventually it started training.</p>
+  
+  <p>However, because I was training on my i5-3550 Windows 10 desktop, training epochs still took a while (my dataset was a 20 MB .txt file). Loss went down, then up, then down again (I wasn't always watching it). As of right now, loss is at 1.2993.</p>
+</body>
+</html>
