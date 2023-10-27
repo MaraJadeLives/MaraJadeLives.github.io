@@ -16,3 +16,7 @@
   display:block;
   font-size:1.3em;
 }
+.grad-bg {
+  background-color:black;
+  background-image: linear-gradient(black, darkslategray);
+}
